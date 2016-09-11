@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/notifiation_image" android:background="#ff455a64" android:padding="18.0dip" android:clickable="false" android:layout_width="@android:dimen/notification_large_icon_width" android:layout_height="@android:dimen/notification_large_icon_height" android:src="@drawable/ic_pgp_white" android:contentDescription="@drawable/notification_icon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="100.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="start|bottom|center" android:id="@id/pgpStatusTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pokémon GO Plus" android:singleLine="true" android:layout_weight="50.0" android:paddingStart="8.0dip" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="start|center|top" android:id="@id/pgpStatusDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Connected" android:layout_weight="50.0" android:paddingStart="8.0dip" style="@android:style/TextAppearance.StatusBar.EventContent" />
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_gravity="center|right" android:id="@id/stopPgp" android:background="@android:drawable/ic_menu_close_clear_cancel" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+</LinearLayout>
